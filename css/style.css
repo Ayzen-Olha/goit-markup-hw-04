@@ -154,7 +154,8 @@ img {
     color: var(--accent-text-color);
 }
 
-.auth-link:hover .icon-contact {
+.auth-link:hover .icon-contact,
+.auth-link:focus .icon-contact {
     fill: var(--accent-text-color);
 }
 
@@ -216,7 +217,7 @@ img {
     margin-right: auto;
 }
 
-/* btn */
+/* button */
 
 .button {
     font-size: 16px;
@@ -250,7 +251,7 @@ img {
 } 
 
 .benefits-title,
-.connection {
+.connection-title {
     font-weight: bold;
     font-size: 14px;
     text-transform:uppercase;
@@ -333,6 +334,7 @@ img {
 .card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
 }
 
 .team-list .card + .card {
@@ -352,8 +354,8 @@ img {
     margin-right: 10px;
 }
 
-.social-link-team:hover,
-.social-link-team:focus {
+.icon-team-link:hover,
+.icon-team-link:focus {
     border-radius: 50%;
     background-color: var(--accent-text-color);
     cursor: pointer;
@@ -371,7 +373,8 @@ img {
     justify-content: center;
 }
 
-.icon-team-link:hover .icon-team {
+.icon-team-link:hover .icon-team,
+.icon-team-link:focus .icon-team {
     fill: var(--white-color);
 }
 
@@ -393,8 +396,7 @@ img {
     justify-content: center;
 }
 
-.our-client-border:hover,
-.our-client-border:focus {
+.our-client-border:hover {
     border: 1px solid var(--accent-text-color);
     cursor: pointer;
 }
@@ -411,6 +413,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.our-client-link:focus .icon-client {
+    fill: var(--accent-text-color);
 }
 
 .our-client-border:hover .icon-client {
@@ -541,17 +547,13 @@ img {
 
 /* connection section */
 
-.connection {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+.connection,
+.connection-block {
+    text-align: left;
     margin-left: 70px;
-    margin-bottom: 0;
-    padding: 0;
-    padding-top: 15px;
 }
 
-.connection .title {
+.connection-title {
     color: var(--white-color);
     margin-bottom: 20px;
 }
@@ -587,5 +589,14 @@ img {
 
 .footer-main {
     display: flex;
+    align-items: baseline;
+}
+
+.footer-main-block {
+    display: flex;
+}
+
+.connection-block {
+    padding-top: 6px;
 }
 
